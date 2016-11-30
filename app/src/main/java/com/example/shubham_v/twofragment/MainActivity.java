@@ -5,8 +5,11 @@ import android.app.FragmentManager;
 import android.app.ListFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ViewGroup;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +22,21 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.fragment_place_Id,fragment);
         fragmentTransaction.commit();
 
+    }
 
+
+    @Override
+    public void onBackPressed() {
+
+        if(getFragmentManager().getBackStackEntryCount()>0)
+        {
+            getFragmentManager().popBackStack();
+        }
+
+        else
+        {
+            super.onBackPressed();
+        }
 
     }
 }

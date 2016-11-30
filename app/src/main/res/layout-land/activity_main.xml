@@ -8,11 +8,17 @@
 
     <FrameLayout
         android:id="@+id/fragment_place_Id"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="match_parent"
-        >
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
     </FrameLayout>
+    <FrameLayout
 
-
+        android:id="@+id/fragment2_place_Id"
+        android:layout_marginLeft="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
 
 </RelativeLayout>

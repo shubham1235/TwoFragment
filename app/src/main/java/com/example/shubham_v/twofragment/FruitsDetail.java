@@ -6,8 +6,8 @@ package com.example.shubham_v.twofragment;
 
 public class FruitsDetail {
 
-    private String fruitName = null;
-    private String fruitDescription = null;
+    private String fruitName = " ";
+    private String fruitDescription = " ";
 
     public void setFruitDescription(String fruitDescription) {
         this.fruitDescription = fruitDescription;

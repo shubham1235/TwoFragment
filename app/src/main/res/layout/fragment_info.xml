@@ -39,7 +39,9 @@
             android:layout_height="match_parent"
             android:text="@string/hello_blank_fragment"
             android:layout_below="@+id/imageView"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            />
     </ScrollView>
 
 </RelativeLayout>
